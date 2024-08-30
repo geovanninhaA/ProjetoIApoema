@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #2c3e50; /* Texto escuro para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.degrade{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgb(0,83,236), purple);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+
+}
+.name{
+    position: absolute;
+    color: #f7f3f0e0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.name h5{
+    padding: 100px;
+}
+.botaoDesce{
+    border: none;
+    background-color: #3a32d810;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+    color: #dcdcdc;
+    padding: 0.6% 4%;
+}
+.botaoDesce:hover{
+    background-color: #1b042e7c;
+    border-radius: 0px;
+    transition: 2s;
+    width: 10% 70%;
+    color: #dcdcdcbd;
+    
+}
+h1 {
+    font-size: 55px;
+    color: #2d4ea0; /* Roxo profundo para destacar o título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave no título */
+    margin-bottom: 20px;
+}
+
+
+@keyframes colors{
+    0%{
+       background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* -----------SEGUNDA TELA-----------*/
+
+.container2{
+    background-color: #000000;
+    width: 100%;  
+    height: 100vh;   
+    color: #dcdcdc;
+    text-align: center ;
+    position: relative;
+  
+}
+.sobre{
+    margin: 5%;
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+    background-color: #442ece;
+}
+a{
+   text-decoration:none ;
+   color: white;
+}
+p{
+    margin: 3%;
+}
+.waves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ondaFundo{
+    animation:moveondaFundo 3s ease-in-out infinite alternate;
+}
+@keyframes moveondaFundo{
+    from {
+        transform: translateX(-600px) scale(2);
+        
+    }
+    
+}
+.ondaMeio{
+    animation:moveondaMeio 3s ease-in-out infinite alternate;
+}
+@keyframes moveondaMeio{
+    from {
+        transform: translateX(-400px) scale(2);
+    }
+    
+}
+.ondaFrente{
+    animation:moveondaFrente 2.98s ease-in-out infinite alternate;
+}
+@keyframes moveondaFrente{
+    from {
+        transform: translateX(-300px) scale(2);
+    }
+    
+}
+/* -----------TERCEIRA TELA-----------*/
+.container{
+    background-color: #4500ca;
+    padding-top: 5%;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;   
+    color: #dcdcdc;
+}
+
+.emvoltadoformulario {
+    margin: 30px;
+    padding: 10px 30px;
+    
+}
+
+.formulario {
+    border: 1px solid #1311112f; /* Borda leve para lembrar o toque de papel */
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff00; /* Fundo branco limpo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra profunda para dar um efeito de elevação */
+    backdrop-filter: blur(100px); /* Efeito de desfoque para dar uma sensação etérea */
+}
+
+
+/* -----------RESPOSTA DA IA-----------*/
+.response {
+    color: #1c0055;
+    display: none;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    background-color:  #ffffffe6; /* Fundo levemente diferenciado */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* -----------CARREGAMENTO----------*/
+#gif{
+    display:none;
+}
+.palavra-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.palavra-input {
+    flex: 1;
+    padding: 12px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 2px solid #ffffff73; /* Borda roxa para um toque de elegância */
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #f7f3f0e1; /* Fundo claro com toque de antigo */
+    box-shadow: inset 0px 2px 9px rgba(0, 0, 0, 0.397); /* Sombra interna para dar profundidade */
+}
+
+.btn-primary {
+    background-color: #442ece; /* Roxo intenso */
+    color:rgba(255, 255, 255, 0.909);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.btn-primary:hover {
+    background-color: #0000008c; /* Tom mais claro ao passar o mouse */
+    transition: 1s;
+    border-radius: 0px;
+
+}
+
+.btn-danger {
+    background-color: #c0392b; /* Vermelho profundo */
+    color: rgba(255, 255, 255, 0.909);
+    padding: 6px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c; /* Tom mais claro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.btn-success {
+    background-color: #10622af5; /* Verde suave */
+    color: rgba(255, 255, 255, 0.909);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.btn-success:hover {
+    background-color: #0000009f   ; /* Tom mais claro ao passar o mouse */
+    transition: 1s;
+    border-radius: 0;
+}
+/* -----------RODAPÉ-----------*/
+footer{
+    color: #dcdcdc;
+    height: 15dvh;
+    width: 100%;
+    display: flex;
+    padding-bottom: 20%;
+    /* bottom: 0%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(0,83,236), purple);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+}
+
+/* -----------RESPONSIVIDADE-----------*/
+
+/* Media Queries para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .formulario {
+        width: 90%; /* Ajuste para telas menores */
+        padding: 20px;
+    }
+
+    .response {
+        width: 90%; /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .formulario {
+        width: 100%; /* Ajuste para telas muito pequenas */
+        padding: 15px;
+    }
+
+    .response {
+        width: 100%; /* Ajuste para telas muito pequenas */
+    }
+
+    .palavra-input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-primary, .btn-danger, .btn-success {
+        padding: 10px;
+        font-size: 14px;
+        margin: 3px;
+    }
+}
