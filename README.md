@@ -3,4 +3,6 @@
 ### Nesse projeto consumimos a api Gemini e linkamos com o nosso site. Implementamos responsividade, hospedamos no Python anywhere e por fim, subimos o projeto no Github.
 
 ### Segue abaixo um link do vídeo! 😺 ⬇️
-https://www.loom.com/share/9bfd2567f74744e3ad25e8635a8df37f?sid=34409fbf-08c5-4924-b858-583b15439700
+https://www.loom.com/share/1883b1c64298400d93745319c35b55c2?sid=95fd9e92-4b03-4ed6-9685-55426a625a6e
+
+##
