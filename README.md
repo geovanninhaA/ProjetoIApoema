@@ -12,10 +12,9 @@ https://www.loom.com/share/1883b1c64298400d93745319c35b55c2?sid=95fd9e92-4b03-4e
 -Backend (app.py): Utiliza o Flask para criar uma API que as informações, comunica-se com o modelo generativo para criar o cronograma de dietas, e retorna o resultado em formato HTML.
 
 ## Requisitos
--Python 3.x
--Flask
--Flask-CORS
--Google Generative AI (Biblioteca gemini)
+* Python 3.x
+* Flask-CORS
+* Google Generative AI (Biblioteca gemini)
 
 ## Contato
 Para mais informações, entre em contato pelo email: geovannaantunescorrea@gmail.com
